@@ -15,8 +15,16 @@ body{
 	width: 60% !important;
 	border-radius: 6px;
 }
+.carousel-caption h3{
+	-webkit-text-stroke: 1px #000;
+	color:#fff;
+	font-size: 2em;
+}
 .carousel-indicators ol{
 	bottom: 0;
+}
+.carousel-indicators .active{
+	background-color: #f4d11e !important;
 }
 .carousel-inner > .item > img,
 .carousel-inner > .item > a > img {
@@ -252,7 +260,7 @@ p{
 .mensaje-enviado{
 	overflow: hidden;
 	padding-top: 50px;
-	background-color:#f5d026;
+	background-color:#f4d11e;
 	text-align: center;
 }
 .msje-exito h2{
@@ -322,6 +330,8 @@ section{
 	border:0;
 	margin-bottom: 4em;
 	margin-top: 2em;
+	width: 80%;
+	height: 500px;
 }
 .contacto-section{
 	background-color:#f4d11e;
@@ -384,6 +394,7 @@ section{
 	padding-left:5px !important;
     width: 100% !important;
 	font-size:15px !important;
+	font-weight: 400;
 }
 .formulario textarea{
 	border: 1px solid #333;
@@ -392,6 +403,7 @@ section{
 	padding-left:5px;
     width: 100%;
 	font-size:15px !important;
+	font-weight: 400;
 }
 .formulario input[type="submit"] {
     border: 1px solid #333;
@@ -609,7 +621,15 @@ footer span{
 	.item img {
 		width:96% !important;
 	}
-	
+	.carousel-caption{
+		padding: 0px !important;
+	}
+	ol.carousel-indicators{
+		margin-bottom: -10px;
+	}
+	.carousel-caption h3{
+		font-size: 1.7em;
+	}
 	.menu-toggle {
 		visibility: visible;
 	}
@@ -692,6 +712,9 @@ footer span{
 	.ubicacion-section iframe{
 		height: 350px;
 		padding-bottom: 0px;
+	}
+	.carousel-caption h3{
+		font-size: 1.5em;
 	}
 	.formulario{
 		margin: 0 auto !important;

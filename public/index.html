@@ -239,11 +239,11 @@
 		<div class="contacto-form">
 			<form id="contacto-form" name="contactoForm" action="#contacto" method="post" class="formulario">
 				<p id="pNombre"><label for="txtNombre">Nombre <abbr class="contacto-requerido" title="Campo requerido.">*</abbr>
-				<input type="text" id="txtNombre" name="txtNombre" maxlength="50" value="<?php echo htmlspecialchars($con->getNombre(), ENT_QUOTES); ?>" required></label></p>
+				<input type="text" id="txtNombre" name="txtNombre" maxlength="50" value="" required></label></p>
 				<p id="pEmail"><label for="txtEmail">Email <abbr class="contacto-requerido" title="Campo requerido.">*</abbr>
-				<input type="email" id="txtEmail" name="txtEmail" maxlength="254" value="<?php echo htmlspecialchars($con->getEmail(), ENT_QUOTES); ?>" required ></label></p>
+				<input type="email" id="txtEmail" name="txtEmail" maxlength="254" value="" required ></label></p>
 				<p id="pMensaje"><label for="txtMensaje">Mensaje <abbr class="contacto-requerido" title="Campo requerido.">*</abbr>
-				<textarea id="txtMensaje" name="txtMensaje" required rows="9" cols="30" maxlength="1000"><?php echo htmlspecialchars($con->getMensaje(), ENT_QUOTES); ?></textarea></label></p>
+				<textarea id="txtMensaje" name="txtMensaje" required rows="9" cols="30" maxlength="1000"></textarea></label></p>
 				<p>* Campo requerido.</p>
 				<p id="pCaptcha"></p>
 				<div id="recaptcha" class="g-recaptcha"></div>
